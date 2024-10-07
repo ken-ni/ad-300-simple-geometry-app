@@ -1,16 +1,21 @@
 public class Triangle extends Shape{
-    int n;
+    int a;
+    int b;
+    int c;
 
-    public Triangle(String name, int n) {
-        super(name);
-        this.n = n;
+    public Triangle(int a, int b, int c) {
+        super("Triangle");
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
 
     public double calculateArea() {
-        return 0;
+        double s = ((a + b + c) / 2);
+        return Math.sqrt(s*(s - a)*(s - b)*(s - c));
     }
 
     public double calculatePerimeter() {
-        return 0;
+        return a + b + c;
     }
 }

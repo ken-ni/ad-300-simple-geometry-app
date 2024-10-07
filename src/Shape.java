@@ -9,7 +9,7 @@ public abstract class Shape {
 
     public abstract double calculatePerimeter();
 
-    public void getName() {
-        System.out.println(this.name);
+    public String getName() {
+        return this.name;
     }
 }

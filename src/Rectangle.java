@@ -1,18 +1,18 @@
 public class Rectangle extends Shape{
-    double length;
-    double width;
+    int length;
+    int width;
 
-    public Rectangle(String name, double length, double width) {
-        super(name);
+    public Rectangle(int length, int width) {
+        super("Rectangle");
         this.length = length;
         this.width = width;
     }
 
     public double calculateArea() {
-        return 0;
+        return length * width;
     }
 
     public double calculatePerimeter() {
-        return 0;
+        return 2 * (length + width);
     }
 }
