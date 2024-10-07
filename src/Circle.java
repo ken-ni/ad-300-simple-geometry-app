@@ -6,10 +6,12 @@ public class Circle extends Shape{
         this.radius = radius;
     }
 
+    // Formula for area of circle
     public double calculateArea() {
         return Math.PI * radius * radius;
     }
 
+    // Formula for perimeter of circle
     public double calculatePerimeter() {
         return 2 * Math.PI * radius;
     }
